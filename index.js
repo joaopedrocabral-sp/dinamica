@@ -1,34 +1,38 @@
-var cardapio = [
+var cervejas = [
   {
-    nome: "Churrasquinho vegano",
-    preco: 503.0,
-    descricao: "A melhor carne que não é carne da região!",
+    nome: "Cerveja Lemon Glow",
+    preco: 9.43,
+    categoria: "Fuit beer",
+    importada: false,
   },
   {
-    nome: "Frango a parmegiana vegano",
-    preco: 203.0,
-    descricao: "O melhor franguinho que você provará, mas sem o frango é claro",
+    nome: "Cerveja Gallows",
+    preco: 12.5,
+    categoria: "Imperial Ipa",
+    importada: true,
   },
   {
-    nome: "Costela de cebola",
-    preco: 53.0,
-    descricao:
-      "Se você gosta de cebola suculenta esse é o melhor prato possível!",
+    nome: "Cerveja Chicago",
+    preco: 14.99,
+    categoria: "Sour Ale",
+    importada: false,
   },
 ];
 
-function cadastroDePrato(pratoNovo){
-    cardapio.push(pratoNovo)
-    console.log(cardapio)
+function cadastroDeCervejas(cervejaNova){
+  cervejas.push(cervejaNova)
+  console.log(cervejas)
 }
 
-var escondidinhoDeJaca = {
-    nome: "Escondidinho de Jaca",
-    preco: 150.5,
-    descricao: "O escondidinho que é a estrela da casa"
+var CervejaTop = {
+  nome: "Viçosa Bier",
+  preco: 15.99,
+  categoria: "Pilsen",
+  importada: false
 }
 
-cadastroDePrato(escondidinhoDeJaca)
+cadastroDeCervejas(CervejaTop)
+
 
 
 var kits = [
@@ -93,3 +97,4 @@ var clientes = [
 }
 
 adicionarCliente(4, "José", "da Silva", 66, "(19) 9 1111-1111")
+console.log(clientes)
