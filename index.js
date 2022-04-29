@@ -98,3 +98,25 @@ var clientes = [
 
 adicionarCliente(4, "José", "da Silva", 66, "(19) 9 1111-1111")
 console.log(clientes)
+
+
+function buscarId (id, clientes) {
+  const idxClientes = clientes.findIndex((cliente) => cliente.id === id);
+  if (idxClientes >= 0) {
+      return clientes[idxClientes]
+  } else {
+      return console.log("Cliente não encontrado")
+  } 
+}
+buscarId(2, clientes)
+
+
+function entreIdade(idade1,idade2){
+  for (let i = 0; i < clientes.length; i++) {
+    if(clientes.idade >= idade1 && clientes.idade <= idade2){
+        var selecionados = clientes.push[i];
+      }
+  }
+  console.log(selecionados);
+}
+console.log(entreIdade(30,70));
